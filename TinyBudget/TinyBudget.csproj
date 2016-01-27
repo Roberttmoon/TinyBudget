@@ -198,6 +198,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="DataAccessLayer\TinyBudgetContext.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -212,8 +213,11 @@
     <Compile Include="Models\BudgetModels\IncomeAndFixed\ManditoryExp.cs" />
     <Compile Include="Models\BudgetModels\IncomeAndFixed\RequiredExp.cs" />
     <Compile Include="Models\BudgetModels\Savings\MediumTermSaving.cs" />
-    <Compile Include="Models\BudgetModels\Savings\ShortTermSavings.cs" />
+    <Compile Include="Models\BudgetModels\Savings\ShortTermSaving.cs" />
     <Compile Include="Models\BudgetModels\Savings\PocketMoney.cs" />
+    <Compile Include="Models\MoneyObject.cs" />
+    <Compile Include="Models\Savings.cs" />
+    <Compile Include="Models\Transaction.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>

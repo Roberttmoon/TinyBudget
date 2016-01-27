@@ -6,13 +6,7 @@ using System.Web;
 
 namespace TinyBudget.Models
 {
-    public class FoodExp
+    public class FoodExp : Transaction
     {
-        [Key]
-        public int foodExpID { get; set; }
-        public string foodExpName { get; set; }
-        public bool foodExpReoccuring { get; set; }
-        public int foodExpReoccurNumDays { get; set; }
-        public DateTime foodExpDate { get; set; }
     }
 }

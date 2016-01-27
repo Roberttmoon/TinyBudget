@@ -6,13 +6,7 @@ using System.Web;
 
 namespace TinyBudget.Models
 {
-    public class HomeGoodExp
+    public class HomeGoodExp : Transaction
     {
-        [Key]
-        public int homeGoodExpID { get; set; }
-        public string homeGoodExpName { get; set; }
-        public bool homeGoodExpReoccuring { get; set; }
-        public int homeGoodExpReoccurNumDays { get; set; }
-        public DateTime homeGoodExpDate { get; set; }
     }
 }

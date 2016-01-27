@@ -6,14 +6,7 @@ using System.Web;
 
 namespace TinyBudget.Models
 {
-    public class IncomeModel
+    public class IncomeModel : Transaction
     {
-        [Key]
-        public int incomeID { get; set; }
-        public string incomeName { get; set; }
-        public int incomeAmount { get; set; }
-        public bool incomeReoccurring { get; set; }
-        public int incomeReoccurEveryNumDays { get; set; }
-        public DateTime incomeDate { get; set; }
     }
 }

@@ -6,14 +6,7 @@ using System.Web;
 
 namespace TinyBudget.Models
 {
-    public class LongTermSaving
+    public class LongTermSaving : Savings
     {
-        [Key]
-        public int longTermSavingID { get; set; }
-        public string longTermSavingName { get; set; }
-        public int totalAmountToLongTermSave { get; set; }
-        public int weeklyAmountToLongTermSave { get; set; }
-        public DateTime dateAdded { get; set; }
-        public string longTermSavingReason { get; set; }
     }
 }

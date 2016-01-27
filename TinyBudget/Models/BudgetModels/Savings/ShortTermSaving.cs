@@ -6,7 +6,7 @@ using System.Web;
 
 namespace TinyBudget.Models
 {
-    public class RequiredExp : Transaction
+    public class ShortTermSaving : Savings
     {
     }
 }
