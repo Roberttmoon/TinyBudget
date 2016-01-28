@@ -197,15 +197,20 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\BudgetControlers\IncomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\BudgetControlers\ShortTermSavingsController.cs" />
+    <Compile Include="Controllers\BudgetControlers\RequiredExpsController.cs" />
     <Compile Include="DataAccessLayer\TinyBudgetContext.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\BudgetModelOld.cs" />
+    <Compile Include="Controllers\BudgetController.cs" />
+    <Compile Include="Models\BudgetModel.cs" />
     <Compile Include="Models\BudgetModels\FoodAndHomeGoods\FoodExp.cs" />
     <Compile Include="Models\BudgetModels\FoodAndHomeGoods\HomeGoodExp.cs" />
+    <Compile Include="Models\BudgetModels\IManipulateFunds.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\BudgetModels\IncomeAndFixed\IncomeModel.cs" />
     <Compile Include="Models\BudgetModels\Savings\LongTermSaving.cs" />
@@ -215,11 +220,12 @@
     <Compile Include="Models\BudgetModels\Savings\MediumTermSaving.cs" />
     <Compile Include="Models\BudgetModels\Savings\ShortTermSaving.cs" />
     <Compile Include="Models\BudgetModels\Savings\PocketMoney.cs" />
-    <Compile Include="Models\MoneyObject.cs" />
-    <Compile Include="Models\Savings.cs" />
-    <Compile Include="Models\Transaction.cs" />
+    <Compile Include="Models\BudgetModels\MoneyObject.cs" />
+    <Compile Include="Models\BudgetModels\Savings.cs" />
+    <Compile Include="Models\BudgetModels\Transaction.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
+    <Compile Include="Views\LongTermSavingsController.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
@@ -281,6 +287,26 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Income\Create.cshtml" />
+    <Content Include="Views\Income\Delete.cshtml" />
+    <Content Include="Views\Income\Details.cshtml" />
+    <Content Include="Views\Income\Edit.cshtml" />
+    <Content Include="Views\Income\Index.cshtml" />
+    <Content Include="Views\ShortTermSavings\Create.cshtml" />
+    <Content Include="Views\ShortTermSavings\Delete.cshtml" />
+    <Content Include="Views\ShortTermSavings\Details.cshtml" />
+    <Content Include="Views\ShortTermSavings\Edit.cshtml" />
+    <Content Include="Views\ShortTermSavings\Index.cshtml" />
+    <Content Include="Views\RequiredExps\Create.cshtml" />
+    <Content Include="Views\RequiredExps\Delete.cshtml" />
+    <Content Include="Views\RequiredExps\Details.cshtml" />
+    <Content Include="Views\RequiredExps\Edit.cshtml" />
+    <Content Include="Views\RequiredExps\Index.cshtml" />
+    <Content Include="Views\LongTermSavings\Create.cshtml" />
+    <Content Include="Views\LongTermSavings\Delete.cshtml" />
+    <Content Include="Views\LongTermSavings\Details.cshtml" />
+    <Content Include="Views\LongTermSavings\Edit.cshtml" />
+    <Content Include="Views\LongTermSavings\Index.cshtml" />
     <Content Include="Views\Budget\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>

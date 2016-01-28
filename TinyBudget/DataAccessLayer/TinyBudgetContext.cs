@@ -20,5 +20,7 @@ namespace TinyBudget.DataAccessLayer
         public DbSet<Models.MediumTermSaving> MediumTermSaving { get; set; }
         public DbSet<Models.ShortTermSaving> ShortTermSaving { get; set; }
         public DbSet<Models.PocketMoney> PocketMoney { get; set; }
+
+        public System.Data.Entity.DbSet<TinyBudget.Models.BudgetModel> BudgetModels { get; set; }
     }
 }

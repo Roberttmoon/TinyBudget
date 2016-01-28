@@ -1,32 +1,25 @@
-﻿@{
-    Layout = "~/Views/Shared/_Layout.cshtml";
-}
+﻿@model IEnumerable<TinyBudget.Models.BudgetModel>
 
-@{ 
+@{
     ViewBag.Title = "Index";
 }
 
-<div class="superBorder">
+<h2>Tiny Budget</h2>
+
+
+
+<div>
     <h1>Your Budget!</h1>
     <div>
         <h2>Income and Expenses</h2>
         <div class="col-md-6">
             <div>
                 <h3>Come Up With Heading</h3>
-                <div>
-                    <h4>Income</h4>
-                    <table class="tableThing">
-                        <thead>
-                            <tr>
-                                <td>Source of Income</td>
-                                <td>Amount</td>
-                                <td>Settings</td>
-                            </tr>
-                        </thead>
-                    </table>
+                <div> 
+                    @Html.Partial("~/Income", TinyBudget.Models.IncomeModel)
                 </div>
                 <div>
-                    <h4>Minatory</h4>
+                    <h4>manditory</h4>
                 </div>
                 <div>
                     <h4>Bills</h4>

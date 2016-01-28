@@ -6,12 +6,18 @@ using System.Web;
 
 namespace TinyBudget.Models
 {
-    public class MoneyObject
+    public class MoneyObject : IManipulateFunds
     {
         [Key]
         public int ID { get; set; }
         public string name { get; set; }
-        public string amount { get; set; }
+        public int amount { get; set; }
         public DateTime timeAdded { get; set; }
+
+        public void MoveFunds(int moniesToMove, MoneyObject moneyWithdraw, MoneyObject moneyDeposit)
+        {
+            moneyWithdraw.amount -= moniesToMove;
+            moneyDeposit.amount += moniesToMove;
+        }
     }
 }

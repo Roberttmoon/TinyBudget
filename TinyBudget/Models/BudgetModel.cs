@@ -6,8 +6,9 @@ using System.Web;
 
 namespace TinyBudget.Models
 {
-    public class IncomeModel : Transaction
+    public class BudgetModel
     {
-       
+        [Key]
+        public int id { get; set; }
     }
 }
